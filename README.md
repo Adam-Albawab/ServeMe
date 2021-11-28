@@ -4,7 +4,7 @@
 
  > cd src/
   
- > python -m venv api
+ > python -m venv "virtual environment name of your choosing"
   
 MacOS: 
 1. source env/bin/activate
