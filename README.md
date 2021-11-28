@@ -7,12 +7,12 @@
  > python -m venv "virtual environment name of your choosing"
   
 MacOS: 
-1. source env/bin/activate
+1. source "environment-name"/bin/activate
 2. export FLASK_APP=serveme 
 3. export FLASK_DEBUG=1
  
 Windows: 
-1. api\Scripts\Activate
+1. "environment-name"\Scripts\Activate
 2. set FLASK_APP=serveme 
 3. set FLASK_DEBUG=1
 
