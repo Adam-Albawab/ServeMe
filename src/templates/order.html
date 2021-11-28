@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<br>
+<div class="is-size-2">
+       <b>Schedule service</b>
+   </div>
+
+<br>
+<br>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+         <div class="notification is-danger">
+        	{{ messages[0] }}
+         </div>
+    {% endif %}
+    {% endwith %}
+{%if providers != null%}
+ <div style="display: flex; flex-direction: horizontal; margin-left:20%;">
+    <div >
+        <div class="box" style="text-align: left"> 
+	<div class="is-size-5">
+	<h1><strong>Provider description: </strong></h1>
+	</div>
+            <hr>
+            <b>Name: </b>{{providers[0].provider_name}}</p>
+            <br>
+            <b>Average rating: </b>{{providers[0].rating_avg}}
+            <img src="{{url_for('static', filename='star.png')}}" alt="placeholder" >
+	    <br>
+            <br>
+            <b>Phone number: </b>{{providers[0].phone_number}}
+            <br>
+            <br>
+            <b>Address: </b>{{providers[0].address}}</p>
+            <br>
+            <b>Email: </b>{{providers[0].email}}</p>
+            <br>
+        </div>
+    </div>
+    <form method="POST" action="{{ url_for('orderController.order',cost=discounted, description=services[0].description, provider_id = provider_id, service_id=service_id) }}">
+            <div style="display: flex; flex-direction: horizontal;">
+
+                <div class="box" style="margin-left:10%; padding:15%"> 
+                   <div class="is-size-5">
+			<h1><strong>Choose date and time:</h1></strong>
+		   </div>
+                    <hr>
+                    <div class="field">
+                        <div class="control">
+                            <input type="date" name="date" max="3000-12-31" required>
+                        </div>
+                    </div>
+                <br>	
+                    <div class="field">
+                        <div class="control">
+                            <input type="time" name="time" required>
+                        </div>
+                    </div>
+
+
+                </div>
+    
+                {% if services != null %}
+                <div  class="box" style="margin-left: 10%;padding:15%" >
+                   <div class="is-size-5">
+			<h1><strong>Price summary: </strong></h1>
+		   </div>
+                    <br>
+                    <b>Subtotal: </b>${{cost}}
+		    <br>
+                    <br>
+                    <b>Tax: </b>${{0.08 * cost}}
+                    <br>
+		    <br>
+                    <b>Total: </b>${{totalcost}}
+		    <br>
+		    <br>
+                    <b>Total using points: </b>${{discounted}}
+                    <br>
+		    <br>
+                    <button class="button is-success">Continue to checkout</button>
+                    <br>      
+                </div>
+                {%endif%}
+    
+
+            </div>
+           
+    </form>
+
+</div>
+{%endif%}
+
+
+    
+
+{% endblock %}

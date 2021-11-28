@@ -1,0 +1,47 @@
+{% extends "provider_base.html" %}
+
+{% block content %}
+<br>
+<br>
+   <div class="is-size-3">
+       <b>Profile Page</b>
+   </div>
+  
+  <hr>
+
+  <div class="card-container">
+    
+    <!-- <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" /> -->
+    <img class="round" src="{{url_for('static', filename='profile_pic.png')}}" alt="user">
+    <h3>{{ user.name }}</h3>
+    <h3>{{ user.email }}</h3>
+    <h3>Age: {{ user.age }}</h3>
+    
+  <br>
+
+  <div class="buttons">
+    <a href="{{ url_for('serviceController.view_services', userID = user.userID )}}">
+      <button class="button is-primary">Services</button>
+    </a>
+   
+   
+  </div>
+    
+    
+    <div class="buttons">
+      <a href="{{ url_for('orderController.requested_orders_provider' )}}">
+        <button class="button is-primary">Requested orders</button>
+      </a>
+     
+      <a href="{{ url_for('orderController.past_orders_provider' )}}">
+        <button class="button is-primary" style="margin-left: 15px;">Past Orders</button>
+      </a>
+    </div>
+   
+
+    <br>
+    <br>
+    <br>
+  </div>
+  
+{% endblock %}
