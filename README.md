@@ -6,23 +6,17 @@
   
  > python -m venv api
   
-
- > MacOS: source env/bin/activate
+MacOS: 
+1. source env/bin/activate
+2. export FLASK_APP=serveme 
+3. export FLASK_DEBUG=1
  
- > Windows: api\Scripts\Activate
+Windows: 
+1. api\Scripts\Activate
+2. set FLASK_APP=serveme 
+3. set FLASK_DEBUG=1
 
 
- > MacOS: export FLASK_APP=serveme
-
- > Windows: set FLASK_APP=serveme
-
-
- > MacOS: export FLASK_DEBUG=1
-
- > Windows: set FLASK_DEBUG=1
-  
-  
  > pip install -r requirements.txt
-
 
  > flask run
