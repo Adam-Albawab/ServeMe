@@ -17,12 +17,12 @@ Step 4: Run the following code in your terminal.
 
 Step 4.1: python -m venv "virtual environment name of your choosing".
   
-## MacOS:\
+**MacOS:**\
 Step 4.2: source "environment-name"/bin/activate\
 Step 4.3: export FLASK_APP=serveme\
 Step 4.4: export FLASK_DEBUG=1
  
-## Windows:\
+**Windows:**\
 Step 4.2: "environment-name"\Scripts\Activate\
 Step 4.3: set FLASK_APP=serveme\
 Step 4.4: set FLASK_DEBUG=1
