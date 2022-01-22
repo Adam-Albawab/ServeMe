@@ -17,12 +17,12 @@ Step 4: Run the following code in your terminal.
 
 Step 4.1: python -m venv "virtual environment name of your choosing".
   
-MacOS:\
+#MacOS:\
 Step 4.2: source "environment-name"/bin/activate\
 Step 4.3: export FLASK_APP=serveme\
 Step 4.4: export FLASK_DEBUG=1
  
-Windows:\
+#Windows:\
 Step 4.2: "environment-name"\Scripts\Activate\
 Step 4.3: set FLASK_APP=serveme\
 Step 4.4: set FLASK_DEBUG=1
@@ -32,4 +32,4 @@ Step 4.5: pip install -r requirements.txt
 Step 4.6: flask run
 
 ## Motivation
-The web application was created as a part of the Object Oriented Software Engineering Class at the Unversity of Texas At Arlington. The class was designed to teach the study of the agile unified methodology and its application to object-oriented software development. Topics included requirements acquisition, use case derivation, modeling and design of interaction behavior and state behavior, introduction to design patterns, derivation of design class diagrams, implementation considerations, and deployment.
+The web application was created as a part of the Object Oriented Software Engineering Class at the Unversity of Texas at Arlington. The class was designed to teach the study of the agile unified methodology and its application to object-oriented software development. Topics included requirements acquisition, use case derivation, modeling and design of interaction behavior and state behavior, introduction to design patterns, derivation of design class diagrams, implementation considerations, and deployment.
