@@ -32,3 +32,4 @@ The web application was created as a part of the Object Oriented Software Engine
 ## Methodology
 [![Q&A Generator](https://imgur.com/a/2B2crM1)](https://youtu.be/dkMBMAiCnqs "Q&A Generator Report")
 
+https://imgur.com/a/2B2crM1
