@@ -1,4 +1,4 @@
-# ServeMe-System
+# ServeMe System
 A web application designed for a gig-based service request system where service providers could sign up and advertise services ranging from plumbing to tutoring. Customers could then browse the available services from a multitude of categories and request a given service. The system was implemented through the Flask framework with CSS/HTML for the frontend and Flask/SQLAlchemy for the backend.
 
 ## Getting Started
