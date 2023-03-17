@@ -27,4 +27,4 @@ Step 4.5: pip install -r requirements.txt
 Step 4.6: flask run
 
 ## Motivation
-The web application was created as a part of the Object Oriented Software Engineering Class at the Unversity of Texas at Arlington. The class was designed to teach the study of the agile unified methodology and its application to object-oriented software development. Topics included requirements acquisition, use case derivation, modeling and design of interaction behavior and state behavior, introduction to design patterns, derivation of design class diagrams, implementation considerations, and deployment.
+The web application was created as a part of HackUTA during a 48 hour hackathon.
